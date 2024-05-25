@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <form id="dobForm">
+      <div class="input-group">
+        <div class="input-container">
+          <label for="day">D A Y</label>
+          <input type="number" id="day" name="day" min="1" max="31" required>
+        </div>
+        <div class="input-container">
+          <label for="month">M O N T H</label>
+          <input type="number" id="month" name="month" min="1" max="12" required>
+        </div>
+        <div class="input-container">
+          <label for="year">Y E A R</label>
+          <input type="number" id="year" name="year" min="1900" max="2024" required>
+        </div>
+      </div>
+      <button type="submit">
+        <img src="assets/images/icon-arrow.svg" alt="buttonpng" />
+      </button>
+      <span id="error" class="error"></span>
+    </form>
+    <div class="results-container" id="results-container">
+      <span>--</span> years <span>--</span> months <span>--</span> days
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
